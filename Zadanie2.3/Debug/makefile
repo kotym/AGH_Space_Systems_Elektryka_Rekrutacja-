@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Zadanie2.1
+BUILD_ARTIFACT_NAME := Zadanie2.3
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Zadanie2.1.elf \
+Zadanie2.3.elf \
 
 MAP_FILES += \
-Zadanie2.1.map \
+Zadanie2.3.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Zadanie2.1.list \
+Zadanie2.3.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Zadanie2.1.elf secondary-outputs
+main-build: Zadanie2.3.elf secondary-outputs
 
 # Tool invocations
-Zadanie2.1.elf Zadanie2.1.map: $(OBJS) $(USER_OBJS) C:\Users\koset\Documents\AGH\Lazik\Elektronika\Rekrutacja\Zadanie2.1\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Zadanie2.1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\koset\Documents\AGH\Lazik\Elektronika\Rekrutacja\Zadanie2.1\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Zadanie2.1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Zadanie2.3.elf Zadanie2.3.map: $(OBJS) $(USER_OBJS) C:\Users\koset\STM32CubeIDE\workspace_1.19.0\Zadanie2.3\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Zadanie2.3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\koset\STM32CubeIDE\workspace_1.19.0\Zadanie2.3\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Zadanie2.3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Zadanie2.1.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Zadanie2.1.list"
+Zadanie2.3.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Zadanie2.3.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Zadanie2.1.elf Zadanie2.1.list Zadanie2.1.map default.size.stdout
+	-$(RM) Zadanie2.3.elf Zadanie2.3.list Zadanie2.3.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

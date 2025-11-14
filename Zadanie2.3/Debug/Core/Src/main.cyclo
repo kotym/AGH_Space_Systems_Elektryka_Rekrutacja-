@@ -1,0 +1,14 @@
+../Core/Src/main.c:96:6:StartSoilMeasurement	6
+../Core/Src/main.c:120:6:StartSoilMeasurementsInLoop	1
+../Core/Src/main.c:126:6:StopSoilMeasurement	1
+../Core/Src/main.c:131:6:ProcessSoilMeasurement	7
+../Core/Src/main.c:159:6:HAL_ADC_ConvCpltCallback	1
+../Core/Src/main.c:164:6:SoilDataReady	2
+../Core/Src/main.c:170:6:HAL_GPIO_EXTI_Callback	2
+../Core/Src/main.c:175:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:189:5:main	1
+../Core/Src/main.c:237:6:SystemClock_Config	3
+../Core/Src/main.c:284:13:MX_ADC1_Init	4
+../Core/Src/main.c:352:13:MX_TIM2_Init	4
+../Core/Src/main.c:397:13:MX_GPIO_Init	1
+../Core/Src/main.c:441:6:Error_Handler	1

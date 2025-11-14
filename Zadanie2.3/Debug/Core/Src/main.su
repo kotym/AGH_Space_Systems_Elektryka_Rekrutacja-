@@ -1,0 +1,14 @@
+../Core/Src/main.c:96:6:StartSoilMeasurement	24	static
+../Core/Src/main.c:120:6:StartSoilMeasurementsInLoop	8	static
+../Core/Src/main.c:126:6:StopSoilMeasurement	4	static
+../Core/Src/main.c:131:6:ProcessSoilMeasurement	24	static
+../Core/Src/main.c:159:6:HAL_ADC_ConvCpltCallback	16	static
+../Core/Src/main.c:164:6:SoilDataReady	8	static
+../Core/Src/main.c:170:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/main.c:175:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:189:5:main	8	static
+../Core/Src/main.c:237:6:SystemClock_Config	88	static
+../Core/Src/main.c:284:13:MX_ADC1_Init	56	static
+../Core/Src/main.c:352:13:MX_TIM2_Init	40	static
+../Core/Src/main.c:397:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:441:6:Error_Handler	4	static,ignoring_inline_asm
