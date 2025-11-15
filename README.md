@@ -12,9 +12,12 @@ Proponuję USB-C, bo ma 10 używalnych pinów.<br>
 Zalety: dwustronne, małe, lekkie, wytrzymałe, tanie, dostępne, sprawdzone.<br>
 Wady: może być trudne do przylutowania z uwagi na małe konektroy.<br>
 
+<b>Zadania 2</b><br>
+Wrzuciłem całey foldery projektów z STMCubeIDE. Są w nim też pliki cmake.<br>
 
 <b>Zadanie 2.1</b> <br>
-Wrzuciłem cały folder projektu z STMCubeIDE. Są w nim też pliki cmake.<br>
-<b>Zadanie 2.2</b>
+Folder Zadanie2.1<br>
+<b>Zadanie 2.2</b><br>
 
-<b>Zadanie 2.3</b>
+<b>Zadanie 2.3</b><br>
+Folder Zadanie2.3<br>
