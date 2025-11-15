@@ -18,6 +18,8 @@ Wrzuciłem całey foldery projektów z STMCubeIDE. Są w nim też pliki cmake.<b
 <b>Zadanie 2.1</b> <br>
 Folder Zadanie2.1<br>
 <b>Zadanie 2.2</b><br>
-
+Folder Zadanie2.2<br>
+Właściwa biblioteka znajduje się w Z2_Lib.h. <br>
+Zrobiłem ją tutaj jako biblioteka nagłówkowa ze względu na łatwość integracji, bo statyczne linkowanie w STM32CubeIDE nie zawsze mi działało.<br>
 <b>Zadanie 2.3</b><br>
 Folder Zadanie2.3<br>
